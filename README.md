@@ -14,6 +14,11 @@ First start the etcd container
 docker compose up -d
 ```
 
+Then get the packages for Go
+```bash
+go mod tidy
+```
+
 then you can start working with the endpoints.
 
 ## API Documentation
