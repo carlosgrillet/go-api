@@ -98,7 +98,7 @@ Retrieves a specific event by its ID.
 
 #### Example Request:
 ```bash
-curl -X GET http://localhost:8080/events/230591
+curl -X GET http://localhost:8080/events/f0f2ca84-b788-413c-85f5-714443c42379
 ```
 
 ---
@@ -125,7 +125,7 @@ Updates an existing event.
 
 #### Example Request:
 ```bash
-curl -X PUT http://localhost:8080/events/230590 \
+curl -X PUT http://localhost:8080/events/f0f2ca84-b788-413c-85f5-714443c42379 \
 -H "Content-Type: application/json" \
 -d '{
     "name": "event name",
