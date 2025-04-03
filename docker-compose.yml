@@ -1,0 +1,13 @@
+services:
+  etcd:
+    image: bitnami/etcd:latest
+    container_name: etcd
+    hostname: etcd
+    environment:
+      - ALLOW_NONE_AUTHENTICATION=yes # Allows unauthenticated access (for development purposes only)
+      - ETCD_ADVERTISE_CLIENT_URLS=http://0.0.0.0:2379
+      - ETCD_LISTEN_CLIENT_URLS=http://0.0.0.0:2379
+    ports:
+      - "2379:2379" # Client port for etcd
+      - "2380:2380" # Peer communication port (optional for single-node setups)
+
