@@ -1,7 +1,7 @@
 # Go API
 
 ## Introduction
----
+
 This is a small project to finalize my Golang course. This API handles events and users.
 Users can create events and events are asociated with a user. Only event owners 
 can delete the event and to enable security the application uses JWT for 
